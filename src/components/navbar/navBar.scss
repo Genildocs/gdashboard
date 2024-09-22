@@ -1,3 +1,73 @@
 .navbar {
-  background-color: blue;
+  height: 50px;
+  border-bottom: 0.5px solid rgb(233, 229, 229);
+  display: flex;
+  align-items: center;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+
+    .search {
+      display: flex;
+      align-items: center;
+      border: 0.5px solid lightgray;
+      border-radius: 5px;
+      padding: 2px;
+
+      .icon {
+        font-size: 20px;
+      }
+
+      input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      cursor: pointer;
+
+      .item {
+        position: relative;
+
+        .icon {
+          font-size: 20px;
+        }
+
+        .counter {
+          width: 15px;
+          height: 15px;
+          background-color: red;
+          border-radius: 50%;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 10px;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+        }
+
+        .avatar {
+          width: 30px;
+          height: 30px;
+          font-family: inherit;
+        }
+      }
+    }
+  }
 }
