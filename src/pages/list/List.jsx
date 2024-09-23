@@ -1,5 +1,9 @@
-import React from 'react';
+import DataTable from '../../components/data-table/DataTable';
 import './list.scss';
 export default function List() {
-  return <div>List</div>;
+  return (
+    <div>
+      <DataTable />
+    </div>
+  );
 }

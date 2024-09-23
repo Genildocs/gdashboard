@@ -9,23 +9,19 @@ import List from '../../components/list-table/List';
 export default function Home() {
   return (
     <div className="home">
-      <SideBar />
-      <div className="homeContainer">
-        <NavBar />
-        <div className="widgets">
-          <Widget type="user" />
-          <Widget type="orders" />
-          <Widget type="earning" />
-          <Widget type="balance" />
-        </div>
-        <div className="charts">
-          <Featured />
-          <Chart />
-        </div>
-        <div className="listContainer">
-          <div className="listTitle">Latest Transactions</div>
-          <List />
-        </div>
+      <div className="widgets">
+        <Widget type="user" />
+        <Widget type="orders" />
+        <Widget type="earning" />
+        <Widget type="balance" />
+      </div>
+      <div className="charts">
+        <Featured />
+        <Chart />
+      </div>
+      <div className="listContainer">
+        <div className="listTitle">Latest Transactions</div>
+        <List />
       </div>
     </div>
   );
