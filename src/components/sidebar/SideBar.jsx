@@ -11,11 +11,14 @@ import AppRegistrationOutlinedIcon from '@mui/icons-material/AppRegistrationOutl
 import DisplaySettingsOutlinedIcon from '@mui/icons-material/DisplaySettingsOutlined';
 import AssignmentIndOutlinedIcon from '@mui/icons-material/AssignmentIndOutlined';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+import { Link } from 'react-router-dom';
 export default function SideBar() {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">gdashboard</span>
+        <Link to="/">
+          <span className="logo">gdashboard</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -23,12 +26,16 @@ export default function SideBar() {
           <p className="title">MAIN</p>
           <li>
             <DashboardIcon className="icon" />
-            <span>Dashboard</span>
+            <Link to={'/'}>
+              <span>Dashboard</span>
+            </Link>
           </li>
           <p className="title">LIST</p>
           <li>
             <PersonOutlineOutlinedIcon className="icon" />
-            <span>Users</span>
+            <Link to={'/users'}>
+              <span>Users</span>
+            </Link>
           </li>
           <li>
             <ProductionQuantityLimitsOutlinedIcon className="icon" />
